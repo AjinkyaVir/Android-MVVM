@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MvvmDemo</string>
+    <string name="newAppName">Mr And Mrs 1989</string>
+    <string name="login">Login</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="forget">Forget</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="createAccount">Create Account</string>
+    <string name="resendOtp">Resend Otp</string>
+    <string name="verify">Verify</string>
+    <string name="otp">Otp</string>
+</resources>
