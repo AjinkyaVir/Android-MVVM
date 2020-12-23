@@ -10,4 +10,8 @@
     <string name="resendOtp">Resend Otp</string>
     <string name="verify">Verify</string>
     <string name="otp">Otp</string>
+    <string name="property">Propperty Image</string>
+    <string name="property_pricing">80L - 1.2Cr</string>
+    <string name="bhk">2,3BHK</string>
+    <string name="contact">Contact</string>
 </resources>

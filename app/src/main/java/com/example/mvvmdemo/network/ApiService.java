@@ -1,9 +1,11 @@
 package com.example.mvvmdemo.network;
 
-import com.example.mvvmdemo.model.LoginModel;
+import com.example.mvvmdemo.login.model.LoginModel;
+import com.example.mvvmdemo.propertylisting.model.PropertyListingModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 /**
@@ -17,5 +19,9 @@ public interface ApiService {
     @GET("api/user/checkOtp")
     Call<LoginModel> checkOtp(@Query("mobileNumber")String mobileNumber,
                                         @Query("otp")int otp);
+
+
+    @POST("api/property/getAllProperties")
+    Call<PropertyListingModel> getAllProperties();
 
 }

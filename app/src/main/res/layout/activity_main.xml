@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable name="loginViewModel"
-            type="com.example.mvvmdemo.viewmodel.LoginViewModel"/>
+            type="com.example.mvvmdemo.login.viewmodel.LoginViewModel"/>
     </data>
     <ScrollView
 

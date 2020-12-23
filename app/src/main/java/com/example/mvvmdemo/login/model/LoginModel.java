@@ -1,4 +1,4 @@
-package com.example.mvvmdemo.model;
+package com.example.mvvmdemo.login.model;
 
 /**
  * Created by Ajinkya on 12/21/2020.

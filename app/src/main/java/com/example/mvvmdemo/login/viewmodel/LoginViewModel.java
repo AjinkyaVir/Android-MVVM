@@ -1,6 +1,5 @@
-package com.example.mvvmdemo.viewmodel;
+package com.example.mvvmdemo.login.viewmodel;
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -14,13 +13,13 @@ import android.widget.Toast;
 
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
-import androidx.lifecycle.ViewModel;
 
 import com.example.mvvmdemo.BR;
 import com.example.mvvmdemo.R;
-import com.example.mvvmdemo.model.LoginModel;
+import com.example.mvvmdemo.login.model.LoginModel;
 import com.example.mvvmdemo.network.ApiService;
 import com.example.mvvmdemo.network.RetrofitClientInstance;
+import com.example.mvvmdemo.propertylisting.ui.PropertyListingActivity;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -51,7 +50,7 @@ public class LoginViewModel extends BaseObservable {
     }
 
     public void onButtonClick() {
-        if (phoneNumber == null || phoneNumber.equals("")){
+        if (phoneNumber.equals("")){
             Toast.makeText(context, "Phone number is Invalid", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show();
@@ -139,10 +138,9 @@ public class LoginViewModel extends BaseObservable {
                     Log.i("@login","signUp url=========>"+call.request().url());
                     if (response.body().getStatus().equals("success")){
                         dialog.dismiss();
-                       /* savePrefsData(response.body().getResult());
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
-                        finish();*/
+
+                        Intent intent = new Intent(context, PropertyListingActivity.class);
+                        context.startActivity(intent);
                     }
                     else {
                         Toast.makeText(context, response.body().getMsg(), Toast.LENGTH_SHORT).show();

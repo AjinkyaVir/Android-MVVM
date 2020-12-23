@@ -5,4 +5,7 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorCreme">#FFFDD0</color>
     <color name="white">#ffffff</color>
+    <color name="dimgray">#699454</color>
+    <color name="rosyBrown">#b5987c</color>
+    <color name="colorDarkGrey">#ad9d9d</color>
 </resources>
